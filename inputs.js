@@ -1,12 +1,21 @@
 import {
     translateToMorse,
-    outputTranslation
 } from "./translator.js";
 
-let string = document.querySelector(".text-box").value;
+let input = document.querySelector(".text-box");
 const button = document.querySelector(".button");
 const output = document.querySelector(".output");
 
-button.addEventListener("click", translateToMorse(string));
-button.addEventListener("click", outputTranslation());
+export const handleInput = () => {
+    let inputValue = input.value;
+    return translateToMorse(inputValue);
+}
+
+export const outputTranslation = () => {
+    output.innerHTML = handleInput();
+}
+
+
+button.addEventListener("click", outputTranslation);
+
 

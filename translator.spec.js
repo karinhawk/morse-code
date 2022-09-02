@@ -21,42 +21,42 @@ describe('Testing translateToMorse', () => {
         expect(result).toBe(".-")
     })
 
-    it("should translate Rob to be .-. --- -...", () => {
+    it("should translate Rob to be .-.----...", () => {
         //arrange
         let string;
         //act
         string = "Rob";
         let result = translateToMorse(string)
         //assert
-        expect(result).toBe(".-. --- -...")
+        expect(result).toBe(".-.----...")
     })
 
-    it("should translate RoB to be .-. --- -...", () => {
+    it("should translate RoB to be .-.----...", () => {
         //arrange
         let string;
         //act
         string = "RoB";
         let result = translateToMorse(string)
         //assert
-        expect(result).toBe(".-. --- -...")
+        expect(result).toBe(".-.----...")
     })
-    it("should translate 'hello there' to be .... . .-.. .-.. --- / - .... . .-. .", () => {
+    it("should translate 'hello there' to be ......-...-..---/-......-..", () => {
         //arrange
         let string;
         //act
         string = "hello there";
         let result = translateToMorse(string)
         //assert
-        expect(result).toBe(".... . .-.. .-.. --- / - .... . .-. .")
+        expect(result).toBe("......-...-..---/-......-..")
     })
-    it("should translate 'hello there ' to be .... . .-.. .-.. --- / - .... . .-. .", () => {
+    it("should translate 'hello there ' to be ......-...-..---/-......-..", () => {
         //arrange
         let string;
         //act
         string = "hello there ";
         let result = translateToMorse(string)
         //assert
-        expect(result).toBe(".... . .-.. .-.. --- / - .... . .-. .")
+        expect(result).toBe("......-...-..---/-......-..")
     })
     it("should translate '!' to be", () => {
         //arrange
@@ -76,14 +76,14 @@ describe('Testing translateToMorse', () => {
         //assert
         expect(result).toBe(".----")
     })
-    it("should translate '123' to be .---- ..--- ...--", () => {
+    it("should translate '123' to be .----..---...--", () => {
         //arrange
         let string;
         //act
         string = "123";
         let result = translateToMorse(string)
         //assert
-        expect(result).toBe(".---- ..--- ...--")
+        expect(result).toBe(".----..---...--")
     })
 })
 
