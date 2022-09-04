@@ -1,16 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+$font-primary: "Fjalla One",
+cursive;
+$color-primary: orangered;
+$color-translate: black;
+$color-secondary: white;
+$color-tertiary: rgb(255, 196, 0);
+
 * {
     margin: 0;
     padding: 0;
 }
 
-.output {
-    height: 200px;
-    width: 500px;
-    border: 3px solid black;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-.text-box {
-    height: 50px;
-    width: 200px;
-    border: 1px solid black;
+.card {
+    height: 90vh;
+    width: 55vw;
+    background-color: $color-primary;
+    color: $color-secondary;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    .heading {
+        font-family: $font-primary;
+        font-size: 40px;
+        text-shadow: 3px 3px $color-tertiary;
+    }
+
+    .text-box {
+        height: 18vh;
+        width: 40vw;
+        border: none;
+        border-radius: 3px;
+        font-size: 20px;
+        padding: 10px;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .button-div {
+        display: flex;
+
+        .button {
+            width: 20vw;
+            height: 8vh;
+            margin: 10px;
+            font-size: 25px;
+            border-radius: 10px;
+            border: none;
+            background-color: $color-tertiary;
+            color: $color-secondary;
+        }
+
+    }
+
+    .output {
+        height: 18vh;
+        width: 40vw;
+        background-color: $color-secondary;
+        border-radius: 5px;
+        padding: 10px;
+        color: $color-translate;
+        font-size: 20px;
+    }
 }

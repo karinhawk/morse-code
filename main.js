@@ -9,3 +9,11 @@ import {
 import {
     outputTranslation
 } from "./inputs.js";
+
+import {
+    clearTranslator
+} from "./inputs.js";
+
+import {
+    hoverOnTitle
+} from "./inputs.js";
