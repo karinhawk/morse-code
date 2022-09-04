@@ -37,7 +37,7 @@ exports.clearTranslator = clearTranslator;
 
 var hoverOnTitle = function hoverOnTitle() {
   heading.innerHTML = "-----.-...../-.-.----.../-.-..--.....-...-----.-.";
-  heading.style.fontSize = "30px";
+  heading.style.fontSize = "25px";
 };
 
 exports.hoverOnTitle = hoverOnTitle;

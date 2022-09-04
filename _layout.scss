@@ -1,0 +1,65 @@
+@use "_base" as *;
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    height: 90vh;
+    width: 55vw;
+    background-color: $color-primary;
+    color: $color-secondary;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    .heading {
+        font-family: $font-primary;
+        font-size: 40px;
+        text-shadow: 3px 3px $color-tertiary;
+    }
+
+    .text-box {
+        height: 18vh;
+        width: 40vw;
+        border: none;
+        border-radius: 3px;
+        font-size: 20px;
+        padding: 10px;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .button-div {
+        display: flex;
+
+        .button {
+            width: 20vw;
+            height: 8vh;
+            margin: 10px;
+            font-size: 25px;
+            border-radius: 10px;
+            border: none;
+            background-color: $color-tertiary;
+            color: $color-secondary;
+        }
+
+    }
+
+    .output {
+        height: 18vh;
+        width: 40vw;
+        background-color: $color-secondary;
+        border-radius: 5px;
+        padding: 10px;
+        color: $color-translate;
+        font-size: 20px;
+    }
+}
